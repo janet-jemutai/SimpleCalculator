@@ -212,7 +212,9 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/digitbutton"
                 android:id="@+id/btn_equals"
-                android:onClick="onOperatorClick"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/maroon"
+                android:onClick="onEqualClick"
                 android:text="=" />
 
 
