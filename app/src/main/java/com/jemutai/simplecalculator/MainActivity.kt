@@ -59,19 +59,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun onDigitClick(view: View) {
-
-        if (stateError){
-           binding.dataTv.text = (view as  Button).text
+        if (stateError) {
+            binding.dataTv.text = (view as Button).text
             stateError = false
-        }
-        else{
+        } else {
             binding.dataTv.append((view as Button).text)
-
         }
-        lastNumber = false
+        lastNumber = true // Set lastNumber to true when a digit is clicked
         onEqual()
-
     }
+
     fun onClearAllClick(view: View) {
 
         binding.dataTv.text =""
